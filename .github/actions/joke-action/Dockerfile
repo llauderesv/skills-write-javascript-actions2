@@ -6,4 +6,6 @@ RUN npm ci
 
 COPY *.js .
 
-ENTRYPOINT [ "node", "main.js" ]
+RUN ls -al
+
+ENTRYPOINT [ "node", "/joke-action/main.js" ]
