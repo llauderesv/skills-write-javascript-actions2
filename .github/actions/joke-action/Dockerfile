@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-WORKDIR /github/workspace
+WORKDIR /github-action
 
 COPY package*.json .
 
@@ -10,4 +10,4 @@ COPY *.js .
 
 RUN ls -al
 
-ENTRYPOINT [ "node", "main.js" ]
+ENTRYPOINT [ "node", "/github-action/main.js" ]
