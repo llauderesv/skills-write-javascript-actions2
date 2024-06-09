@@ -8,4 +8,4 @@ COPY *.js .
 
 RUN ls -al
 
-ENTRYPOINT [ "node", "/joke-action/main.js" ]
+ENTRYPOINT [ "node", "main.js" ]
